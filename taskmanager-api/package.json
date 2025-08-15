@@ -1,0 +1,27 @@
+{
+  "name": "taskmanager-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\Error: no test specified\\ && exit 1"
+  },
+  "author": "Thay",
+  "license": "ISC",
+  "description": "API para gerenciar tarefas",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "yarn": "^1.22.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thay2024/taskmanagerAPI.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Thay2024/taskmanagerAPI/issues"
+  },
+  "homepage": "https://github.com/Thay2024/taskmanagerAPI#readme"
+}
