@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To Do List</title>
+<link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para o Font Awesome -->
+</head>
+
+<body>
+<h1 class="titulo"> Minha Lista de Tarefas</h1>
+<form>
+    <input class="campo-tarefa" type="text" placeholder="Digite o título da tarefa" required> <!-- Campo de título -->
+    
+    <textarea class="campo-descricao" placeholder="Detalhe sua tarefa" required></textarea> <!-- Campo descrição -->
+    
+    <select class="campo-status" required> <!-- Campo status -->
+        <option value="Pendente">Pendente</option>
+        <option value="Em andamento">Em andamento</option>
+        <option value="Concluída">Concluída</option>
+    </select>
+    
+    <select class="campo-prioridade" required> <!-- Campo prioridade -->
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+    </select>
+    
+    <input class="campo-data-entrega" type="date"> <!-- Campo data de entrega -->
+    
+    <button class="botao-adicionar" type="submit">Adicionar</button> <!-- Botão para adicionar -->
+</form>
+
+<ul class="lista-tarefas">
+    <li class="item-tarefa">
+        <h2>Título</h2>
+        <p>Status: Pendente | Prioridade: Alta</p>
+        <p>Descrição: Detalhe aqui a tarefa.</p>
+        <p>Criada em: 2025-08-14</p>
+        <p>Entrega: 2025-08-20</p>
+        <button class="btn-editar">Editar</button>
+        <button class="btn-remover">Remover</button>
+    </li>
+</ul>
+
+ 
+    <!-- Link para o arquivo JavaScript -->
+<!--<script src="js/app.js"></script> -->
+ 
+    <!-- Link para o arquivo JavaScript de Local Storage -->
+<script src="js/script-integracaoAPI.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Link para o jQuery -->
+</body>
+</html>

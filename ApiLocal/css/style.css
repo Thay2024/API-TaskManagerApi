@@ -1,0 +1,131 @@
+/* Estilo geral do corpo */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Campo de tarefa */
+.campo-tarefa,
+.campo-descricao,
+.campo-status,
+.campo-prioridade,
+.campo-data-entrega {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.campo-descricao {
+  min-height: 80px; /* Para o campo de descrição ser maior */
+}
+
+/* Botão de adicionar */
+.botao-adicionar {
+  background-color: #009297;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+.botao-adicionar:hover {
+  background-color: #01595c;
+}
+
+/* Lista de tarefas */
+.lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Item da lista */
+.item-tarefa {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-tarefa h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.item-tarefa p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+/* Status e Prioridade */
+.item-tarefa .status-prioridade {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* Botões de ação (editar e remover) */
+.botao-editar,
+.botao-remover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.botao-editar:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.botao-remover:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Caixa de edição - para formatação do prompt */
+.botao-editar,
+.botao-remover {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+/* Para facilitar a visualização das datas */
+.item-tarefa .data {
+  font-size: 0.9em;
+  color: #666;
+}
